@@ -1,10 +1,11 @@
 # Iterative MILP methods for vehicle control - Julia 
-Done as part of my Linear Optimization class presentation. Contains Julia implementation for the following paper - M. G. Earl and R. D'Andrea, "Iterative MILP methods for vehicle-control problems,". The dynamics of the robot is modelled as a discrete pointmass where at each time step:
+Done as part of my Linear Optimization class presentation. Contains Julia implementation for the following paper - M. G. Earl and R. D'Andrea, "Iterative MILP methods for vehicle-control problems,". The dynamics of the robot is modelled as a discrete point-mass where at each time step:
  
 $x_{pos+1} = x_{pos} + x_{vel}$
+
 $x_{vel+1} = x_{vel} + x_{accel}$
 
-$x_{accel}$is denoted as $u$ inside the code to symbolize control variables just like in the paper.
+$x_{accel}$ is denoted as $u$ inside the code to symbolize control variables just like in the paper.
 
 # Julia scripts
 - 1_simple.jl: Simple Trajectory Generation, discrete point mass test
@@ -14,7 +15,7 @@ $x_{accel}$is denoted as $u$ inside the code to symbolize control variables just
 - 5_growing_iterative_method.jl: Increasing of obstacle radius at every iteration (problem relaxation) for even faster solving time.
 
 # Other papers
-This repo also contain other papers that covers using Mixed Integer Linear Programming (MILP) for control/trajectory of systems.
+This repo also contains other papers that cover using Mixed Integer Linear Programming (MILP) for control/trajectory of systems.
 
 # Slide link
 Google slides that I used for my Linear Optimization class presentation.
